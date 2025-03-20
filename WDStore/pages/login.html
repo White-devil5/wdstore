@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - WD Store</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"> -->
+    <script src="../index.global.js"></script>
+</head>
+<body class="bg-[#ffe9f4]">
+    <div class="flex items-center justify-center h-screen">
+        <div class="bg-[#ffdcee] text-[#53002b] p-6 rounded shadow-lg w-96">
+            <h2 class="text-2xl font-bold mb-4">Login</h2>
+            <form id="loginForm" class="space-y-4">
+                <div>
+                    <label for="username" class="block">Username</label>
+                    <input type="text" id="username" name="username" class="bg-[#ffe9f4] text-[#ff5cb1] focus:outline focus:outline-[#53002b] w-full px-4 py-2 border rounded">
+                </div>
+                <div>
+                    <label for="password" class="block">Password</label>
+                    <input type="password" id="password" name="password" class="bg-[#ffe9f4] text-[#ff5cb1] focus:outline focus:outline-[#53002b] w-full px-4 py-2 border rounded">
+                </div>
+                <button type="submit" class="w-full bg-[#ff5cb1] text-[#53002b] py-2 rounded hover:bg-[#53002b] hover:text-[#ffe9f4]">
+                    Login
+                </button>
+            </form>
+            <p class="mt-4 text-center">
+                New User? <a href="register.html" class="text-[#53002b] font-bold">Register</a>
+            </p>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

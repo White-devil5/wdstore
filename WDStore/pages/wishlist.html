@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - WDStore</title>
+    <script src="../index.global.js"></script>
+</head>
+
+<body class="bg-[#ffe9f4] text-[#53002b] flex flex-col min-h-screen">
+    <header class="bg-[#ff5cb1] shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold hover:text-3xl"><a href="../index.html">WDStore</a></h1>
+            <div style="flex-basis: 180px;"></div> <!-- Placeholder for search bar -->
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="../index.html" class="hover:font-bold">Home</a></li>
+                    <li><a href="contact.html" class="hover:font-bold">Contact</a></li>
+                    <li><a href="wishlist.html" class="hover:font-bold">Wishlist</a></li>
+                    <li><a href="cart.html" class="hover:font-bold">Cart</a></li>
+                </ul>
+            </nav>
+            <div class="relative">
+                <button id="profileButton" class="w-10 h-10 bg-[#ff5cb1] rounded-full focus:outline-none">
+                    <img src="../img/profile/profile.jpg" alt="Profile" class="w-full h-full rounded-full">
+                </button>
+                <div id="profileDropdown" class="hidden absolute right-0 mt-2 w-48 bg-[#ffdcee] rounded-md shadow-lg py-2">
+                    <a href="#" id="profilelink" class="block px-4 py-2 hover:bg-gray-200"></a>
+                    <a href="#" id="logoutLink" class="block px-4 py-2 text-red-500 hover:bg-gray-200">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="text-[#53002b] container flex-1 mx-auto py-6">
+        <h1 class="text-3xl font-bold mb-6 text-center">Your Wishlist</h1>
+        <div id="wishlistItems" class="bg-[#ffdcee] p-6 rounded shadow-lg">
+            <!-- Wishlist items will be dynamically added here -->
+            <p id="emptyWishlistMessage" class="text-center">Your wishlist is empty.</p>
+        </div>
+    </main>
+
+    <footer class="bg-[#ff5cb1] py-4 mt-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 WDStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/wishlist.js"></script>
+</body>
+
+</html>
